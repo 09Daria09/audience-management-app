@@ -1,0 +1,28 @@
+<div class="container">
+    <h2>Управление аудиториями</h2>
+    
+    <div class="controls">
+      <button class="button" (click)="showAllAudiences()">Показать все аудитории</button>
+      <button class="button" (click)="sortByCapacity()">Сортировать по количеству мест</button>
+      <button class="button" (click)="sortByName()">Сортировать по названию</button>
+    </div>
+    
+    <div class="filters">
+      <select class="select" [(ngModel)]="selectedFaculty" (change)="filterByFaculty(selectedFaculty)">
+        <option value="">Выберите факультет</option>
+        <option *ngFor="let faculty of faculties">{{ faculty }}</option>
+      </select>
+  
+      <select class="select" [(ngModel)]="selectedGroup" (change)="filterForGroup(selectedGroup)">
+        <option value="">Выберите группу</option>
+        <option *ngFor="let group of groups" [ngValue]="group">{{ group.name }}</option>
+      </select>
+    </div>
+  
+    <div class="auditoriums">
+      <div *ngFor="let audience of filteredAudiences" class="auditorium">
+        <p>{{ audience.name }} - {{ audience.capacity }} мест - {{ audience.faculty }}</p>
+      </div>
+    </div>
+  </div>
+  

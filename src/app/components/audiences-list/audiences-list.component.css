@@ -1,0 +1,53 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f6e1e8; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #6c757d; 
+  }
+  
+  .controls {
+    margin-bottom: 20px;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #ff7eb9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+  }
+  
+  .button:hover {
+    background-color: #f468a0; 
+  }
+  
+  .select {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  .auditorium {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    background-color: #fff; 
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .auditorium:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  }
+  
